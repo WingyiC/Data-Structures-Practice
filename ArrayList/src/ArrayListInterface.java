@@ -1,4 +1,4 @@
-public interface ArrayListInterface<T> {
+apublic interface ArrayListInterface<T> {
 
     /**
      * The initial capacity of the array list.
