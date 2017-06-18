@@ -8,6 +8,6 @@ This repo contains my implementation of some data structure.
       isEmpty, size, add, compress, clear, contains, remove, deletedNodeCount
       
 3) Stack and Queue - implemented using both circular array and linked list:
-      Stack: isEmpty, pop, push, size
-      Queue: dequeue, enqueue, isEmpty, size
+   Stack: isEmpty, pop, push, size
+   Queue: dequeue, enqueue, isEmpty, size
       
