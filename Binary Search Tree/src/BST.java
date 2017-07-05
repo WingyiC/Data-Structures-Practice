@@ -201,7 +201,6 @@ public class BST<E extends Comparable> implements BinaryTree <E> {
 
         } else if (remove.left != null && remove.right != null) { // if the node has two child
             List<Bnode> inOrderSuccessor = findInorderSuccessor(remove.right);
-            Bnode<E> successor_parent = null;
 
             if (remove.right.left == null) { //if there is no inorder successor, remove's right child is the successor
                 remove.right.left = remove.left;
@@ -213,7 +212,7 @@ public class BST<E extends Comparable> implements BinaryTree <E> {
                    }
                 }
             } else { // if inorder successor exist
-                successor_parent = inOrderSuccessor.get(inOrderSuccessor.size() - 2);
+                Bnode<E> successor_parent = inOrderSuccessor.get(inOrderSuccessor.size() - 2);
                 Bnode<E> successor = inOrderSuccessor.get(inOrderSuccessor.size() - 1);
                 remove.data = successor.data; //change the data of remove to its successor's data
                 successor_parent.left = null; //remove the successor
