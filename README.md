@@ -12,4 +12,8 @@ This repository contains my implementation of some data structure.
 ###### 3) Stack and Queue (implemented using both circular array and linked list)
 - Stack: isEmpty, pop, push, size
 - Queue: dequeue, enqueue, isEmpty, size
+
+###### 4) Binary Search Tree(without rotations)
+*For node removal, inorder successor is used.*
+- isEmpty, size, add, max, min, contains, remove, iterator, getPostOrder, getLevelOrder, getPreOrder, getInorder, clear
       
